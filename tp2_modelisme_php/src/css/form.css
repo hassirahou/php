@@ -1,0 +1,263 @@
+
+
+a
+{
+    color: rgb(4, 54, 29);
+    text-decoration: none;
+    transition: color 0.25s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a:hover
+{
+    color: rgb(128, 255, 138);
+}
+
+
+
+
+
+
+
+.order-form-customer
+{
+    /* structure */
+    padding: 1em 0;
+
+    /* presentation */
+    text-align: right;
+}
+
+
+.standard-table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+table
+{
+    /* structure */
+    padding: 0.5em 0;
+
+    /* presentation */
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+}
+.standard-table tbody tr
+{
+    transition: background-color 0.25s;
+}
+.standard-table tbody tr:nth-child(even),
+.standard-table tfoot tr:nth-child(even)
+{
+    background-color: #DFE5DA;
+}
+.standard-table tbody tr:nth-child(odd),
+.standard-table tfoot tr:nth-child(odd)
+{
+    background-color: #BABFB5;
+}
+.standard-table tbody tr:hover
+{
+    background-color: #998882;
+    cursor: default;
+}
+.standard-table td,
+.standard-table th
+{
+    padding: 0.25em 0.5em;
+}
+.standard-table th
+{
+    color: #00968B;
+}
+.standard-table tfoot tr,
+.standard-table thead tr
+{
+    text-align: left;
+}
+.standard-table tfoot tr,
+.standard-table .money-column
+{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form
+{
+    margin-top: 2em;
+}
+form fieldset
+{
+    border-radius: 4px;
+}
+form fieldset legend
+{
+    padding: 0 0.5em;
+}
+
+hr
+{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+
+
+/*
+ * Styles des boutons
+ */
+
+ .button
+ {
+     /* structure */
+     display: inline-block;
+     padding: 0.375em 1.25em;
+ 
+     /* presentation */
+     border: none;
+     border-radius: 4px;
+     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+     font-weight: bold;
+     line-height: 1.5em;
+     text-decoration: none;
+     transition: background-color 0.25s, box-shadow 0.25s;
+ }
+ .button[disabled],
+ .button[disabled]:hover
+ {
+     background-color: silver;
+     box-shadow: none;
+     color: grey;
+ }
+ .button + .button
+ {
+     margin-left: 1em;
+ }
+ 
+ .button-cancel
+ {
+     background-color: #FF3300;
+     color: white;
+ }
+ .button-cancel:hover
+ {
+     background-color: #FF6633;
+     box-shadow: 0 0 4px 2px rgba(255, 102, 51, 0.5);
+     color: white;
+ }
+ 
+ .button-primary
+ {
+     background-color: #339966;
+     color: white;
+ }
+ .button-primary:hover
+ {
+     background-color: #66CC99;
+     box-shadow: 0 0 4px 2px rgba(102, 204, 153, 0.5);
+     color: white;
+ }
+ 
+ .button:active
+ {
+     box-shadow: none;
+ }
+
+
+
+
+ /*
+ * Styles des formulaires
+ */
+
+.generic-form
+{
+    margin: 0 auto;
+    width: 50%;
+}
+.generic-form fieldset
+{
+    border-color: #01A2A6;
+}
+.generic-form fieldset legend
+{
+    color: #01A2A6;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.generic-form input[type="password"],
+.generic-form input[type="text"],
+.generic-form select,
+.generic-form textarea
+{
+    /* structure */
+    padding: 2px;
+
+    /* presentation */
+    border: 1px solid grey;
+    transition: background-color 0.33s;
+}
+.generic-form input[type="password"],
+.generic-form input[type="text"],
+.generic-form select,
+.generic-form textarea
+{
+    width: 30em;
+}
+.generic-form input[type="password"]:focus,
+.generic-form input[type="text"]:focus,
+.generic-form select:focus,
+.generic-form textarea:focus
+{
+    background-color: #E3FFFB;
+}
+.generic-form textarea
+{
+    resize: none;
+}
+.generic-form ul
+{
+    list-style-type: none;
+}
+.generic-form ul li
+{
+    margin: 1em 0;
+}
+.generic-form ul li:last-child
+{
+    margin-left: 116px; /* pour aligner avec les autres labels */
+    margin-top: 3em;
+}
+.generic-form ul li label
+{
+    /* structure */
+    display: inline-block;
+
+    /* presentation */
+    color: #2F2933;
+    font-weight: bold;
+}
+.generic-form ul li label.textarea
+{
+    vertical-align: top;
+}
+.generic-form ul li label
+{
+    width: 112px;
+}
